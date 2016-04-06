@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gastonprieto/sample.svg?branch=master)](https://travis-ci.org/gastonprieto/sample)
+[![Build Status](https://travis-ci.org/dds-utn/sample-travis.svg?branch=master)](https://travis-ci.org/dds-utn/sample-travis)
 
 # sample by gaston y fede
 
