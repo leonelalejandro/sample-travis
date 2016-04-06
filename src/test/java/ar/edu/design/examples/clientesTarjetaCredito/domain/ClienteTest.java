@@ -35,7 +35,7 @@ public class ClienteTest {
 	@Test
 	public void testComprar() {
 		cliente.comprar(50);
-		Assert.assertEquals(cliente.getDeuda(), 100000);
+		Assert.assertEquals(cliente.getDeuda(), 100);
 	}
 
 	@Test(expected = BusinessException.class)
