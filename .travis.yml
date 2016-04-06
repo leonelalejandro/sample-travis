@@ -1,1 +1,10 @@
 language: java
+
+
+notifications:
+  email:
+    recipients:
+      - canofedericomartin@gmail.com
+      - gastonprietoutn@gmail.com
+    #on_success: [always|never|change] # default: change
+    on_failure: always # default: always
