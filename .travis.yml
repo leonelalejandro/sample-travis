@@ -2,6 +2,9 @@ language: java
 
 jdk:
   - oraclejdk8
+  
+#before_install
+#  cd carpetaDondeEstaElPOM #solo si no tienen el pom en el raíz del repositorio
 
 #notifications:
 #  email:
