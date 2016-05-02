@@ -6,6 +6,11 @@ jdk:
 #before_install:
 #  cd carpetaDondeEstaElPOM #solo si no tienen el pom en el raíz del repositorio
 
+
+#si usamos codecov
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
 #notifications:
 #  email:
 #    recipients:
