@@ -9,7 +9,7 @@ jdk:
 
 #si usamos codecov
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - mvn clean  cobertura:cobertura scm-publish:publish-scm
 
 #notifications:
 #  email:
