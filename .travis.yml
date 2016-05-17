@@ -1,21 +1,9 @@
 language: java
-
 jdk:
-  - oraclejdk8
-  
-#before_install:
-#  cd carpetaDondeEstaElPOM #solo si no tienen el pom en el raíz del repositorio
-
-
-#si usamos codecov
+- oraclejdk8
 after_success:
-  - mvn clean  cobertura:cobertura scm-publish:publish-scm
-
-#notifications:
-#  email:
-#    recipients:
-#      - one@example.com
-#      - other@example.com
-#    on_success: [always|never|change] # default: change
-#    on_failure: [always|never|change] # default: always
-
+- mvn clean  cobertura:cobertura
+- ./utility/.coverage.sh
+env:
+  global:
+    secure: B81A/3ykY+rBwtTxZlduIXcQyUuDnYnUOcYu7XnABhBN0enyK06QoHiA4cXt0cpLvAYqLOx9/Cnr3gv87D9IWVYM1ZwUdlmuZT+yVXhcdmWAnXnnJ8ON+xYLbyxr6t0vbiKGGvnTLY8yzWEUdfy/hO+xtZYQOTqNsDqftq7S2oozhHcrGZRouK9fm7GwHGawI76LJDDGR+9zCDQ85adTWqLrduT4UpSzN9ZcdIr/HlNKGcSY8d3f1SKeLLJSewAkPtI9Gb5/a8XsYBxBFumPW8LRGNIquoHw4Qb8kycahkPkfn6raJLdsbQHMK4sSb9EGny56JjZtRlxsXLngAlyiLJvVWmQF8y/xUf+Ph61ncqESv4CGmZuRQrkTMGEHTzE2vVTdC9q9Olfp8gQ9/bCmiQDdXt1dTXSdnBRYW2UtbCqzuraq3976yeb+iYLOtrcHmVUjIv+UbAnp4TpYp5PBELg5tuW59RjhRbf6y6I3YPIYX9v9hTc0yFZPcbBYYA3xFVip3NuJCuVXFlYkgpR4Po2rvIkQ4ZcMhLdtZXJEEI5PQx0FOBzbsnYOaRhTGhn79yDJf8b+ZkX2TrSR63esKfgs6g/NoIcV5SKvglpdE9myeup+jVILSkFu+UGwKg/PooNHpVrGF9UBVVHsU4KrfdfhV5zlBzLCTpqn6LYO3o=
