@@ -16,20 +16,29 @@
 
   <build>
     <plugins>
-     
-      <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-scm-publish-plugin</artifactId>
-            <version>1.0-beta-2</version>
-            <configuration>
-	        <checkinComment>Publishing javadoc for ${project.artifactId}:${project.version}</checkinComment>
-	        <content>${project.build.directory}/site/cobertura</content>
-	        <skipDeletedFiles>true</skipDeletedFiles>
-	        <pubScmUrl>scm:git:git@github.com:dds-utn/sample-travis.git</pubScmUrl>
-	        <scmBranch>gh-pages</scmBranch> <!-- branch with static site -->
-	    </configuration>
-      </plugin>
-
+    	
+        <!-- Para generar el reporte -->
+	<plugin>
+	    <groupId>org.jacoco</groupId>
+	    <artifactId>jacoco-maven-plugin</artifactId>
+	    <version>0.7.6.201602180812</version>
+	    <executions>
+	        <execution>
+	            <id>default-prepare-agent</id>
+	            <goals>
+	                <goal>prepare-agent</goal>
+	            </goals>
+	        </execution>
+	        <execution>
+	            <id>default-report</id>
+	            <phase>prepare-package</phase>
+	            <goals>
+	                <goal>report</goal>
+	            </goals>
+	        </execution>
+	    </executions>
+	</plugin>
+      
       
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
