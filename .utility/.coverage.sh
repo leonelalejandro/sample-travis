@@ -11,7 +11,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
 
   cd gh-pages
   git rm -rf *
-  cp -Rf $HOME/target/site/cobertura/* .
+  cp -Rf $TRAVIS_BUILD_DIR/target/site/cobertura/* .
   git add -f .
   git commit -m "Lastest cobertura report on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to gh-pages"
   git push -fq origin gh-pages > /dev/null
