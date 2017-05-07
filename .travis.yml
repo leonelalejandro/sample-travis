@@ -5,6 +5,7 @@ directories:
 jdk:
 - oraclejdk8
 after_success:
+- mvn package
 - ./.utility/.coverage.sh
 env:
   global:
