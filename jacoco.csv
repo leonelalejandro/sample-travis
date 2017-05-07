@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+clientesTarjetaCredito,ar.edu.design.examples.clientesTarjetaCredito.domain,ClientePosta,7,94,1,5,3,26,2,12,1,10
+clientesTarjetaCredito,ar.edu.design.examples.clientesTarjetaCredito.domain,Promocion,0,10,0,2,0,4,0,3,0,2
+clientesTarjetaCredito,ar.edu.design.examples.clientesTarjetaCredito.domain,SafeShop,0,30,0,2,0,6,0,3,0,2
+clientesTarjetaCredito,ar.edu.design.examples.clientesTarjetaCredito.exceptions,BusinessException,0,4,0,0,0,2,0,1,0,1
